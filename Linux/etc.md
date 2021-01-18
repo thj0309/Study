@@ -1,6 +1,7 @@
 ##############################################################################################################################
 보기
 1. ubuntu 18.04 - Could not get lock /var/lib/dpkg/lock-frontend - open 오류 해결하기
+2. ubuntu 18.04 - su: Authentication failure : root 계정 접속 불가시
 
 ##############################################################################################################################
 
@@ -12,7 +13,6 @@
 - 위의 lock 관련 파일을 삭제한 후, 업데이트하면 해결 됩니다.
 
 (2) 해결 방법
-
 - 프로세스 모두 종료
 sudo killall apt apt-get
 
@@ -28,4 +28,13 @@ sudo dpkg --configure -a
 sudo apt update
  
  
-2.
+2. ubuntu 18.04 - su: Authentication failure : root 계정 접속 불가시
+(1) 원인 : root 비밀번호를 설정하지 않아서, 설정하면 됨.
+(2) 해결 방법 : sudo passwd root
+
+
+3. ubuntu 18.04 : 외부 아이피 확인 방법
+- curl ifconfig.me
+// curl 없으면, apt install curl 로 설치 진행
+
+
