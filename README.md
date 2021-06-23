@@ -1,8 +1,3 @@
-# Study
-I made just it as notebook. So, I wanna be a Data Science.
-- an integrated person
-
-HW SW NW etc..
 
 # VCS : Version Control System, 버전 관리 시스템
 파일의 변경 사항을 저장하고, 원하는 시점의 버전을 다시 꺼내올 수 있는 시스템
